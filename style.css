@@ -219,7 +219,10 @@ footer{
     padding-top: 9px;
     padding-left: 7px;
 }
-/* input{
+
+
+
+input{
     background-color: rgb(81, 91, 96) !important;
     color: white;
     border: none;
@@ -241,10 +244,61 @@ footer{
 }
 
 input::placeholder {
-  color: rgb(255, 255, 255);        } */
+  color: rgb(255, 255, 255);        }
+
+
+footer {
+  background-color: rgb(38, 50, 56);
+  color: white;
+  padding: 40px 20px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* extra space on right for icon */
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-wrapper input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+.input-wrapper .icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-wrapper .icon img {
+  width: 18px; /* control size of icon */
+  height: 18px;
+}
+
+/* OPTIONAL: Make the input full-width on smaller screens */
+@media (max-width: 768px) {
+  .input-wrapper {
+    max-width: 100%;
+  }
+}
+
+
 
 /* Media Queries */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     header {
         flex-direction: row;
         align-items: center;
@@ -258,17 +312,26 @@ input::placeholder {
         align-items: center;
     }
     .cards {
-        width: 208.12px;
+        width: 308.12px;
         margin-bottom: 0;
     }
     footer {
         flex-direction: row;
         align-items: flex-start;
         gap: 0;
+        margin: 0,auto;
     }
     .company {
         width: auto;
         margin-bottom: 0;
     }
+.text-withimages{
+    display: flex;
+    flex-direction: column!important;
+    margin: 0,auto;
+}
+.payment{
+    margin: 0,auto!important;
+}
 }
 

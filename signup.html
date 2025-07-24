@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <style>
+      * {
+        text-transform: capitalize;
+        box-sizing: border-box;
+
+      }
+
+      body {
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .button {
+        background-color: #4caf4f;
+        border: 2px solid #4caf4f;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+        display: inline-block;
+      }
+
+      .button:hover {
+        background-color: #45a049;
+        transform: scale(1.05);
+      }
+
+      .clousure {
+        background-color: #f5f7fa;
+        padding: 40px 20px;
+      }
+
+      .client-logos img {
+        max-width: 100px;
+        margin: 10px;
+      }
+
+      .cards {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .bit {
+        font-size: 25px;
+        margin: 0 10px;
+        background-color: rgb(60, 70, 76);
+        border: 2px solid rgb(60, 70, 76);
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        padding-top: 9px;
+        padding-left: 7px;
+      }
+
+      footer {
+        background-color: rgb(38, 50, 56);
+        color: white;
+        padding: 40px 20px;
+      }
+
+      .input-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .input-wrapper input {
+        width: 100%;
+        padding: 10px 40px 10px 10px;
+        background-color: gray;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .input-wrapper input::placeholder {
+        color: white;
+        opacity: 0.5;
+      }
+
+      .input-wrapper .icon {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translateY(-50%);
+        color: white;
+      }
+
+      .head {
+        padding: 30px 0;
+        font-weight: bold;
+      }
+      .color {
+        background-color: #4caf4f;
+      }
+      .text-color {
+        color: #4caf4f;
+      }
+      .hover{
+              transition: transform 0.3s ease;
+      }
+      .hover:hover{
+        background-color: #96e098;
+              transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="form-signin w-50 m-auto">
+      <form>
+        <img
+          class="mb-4"
+          src="./images/nexcent.png"
+          alt=""
+          width="250"
+          height="100"
+          m-auto
+        />
+        <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+           <label for="floatingInput">User name</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="enter your name"
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+        <div class="form-check text-start my-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value="remember-me"
+            id="checkDefault"
+          />
+          <label class="form-check-label" for="checkDefault">
+            Remember me
+          </label>
+        </div>
+        <p>already have an account? <a class="text-color"  href="login.html">login</a></p>
+        <button class="btn color w-50 py-2 hover" type="submit"><a href="index.html">Sign up</a></button>
+        <p class="mt-5 mb-3 text-body-secondary">© 2017–2025</p>
+      </form>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
